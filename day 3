@@ -145,3 +145,19 @@ int main() {
     }
     return 0;
 }
+
+// problem 10
+// smartphone password checker 
+// try to find out code until we get correct password
+#include <iostream>
+using namespace std;
+int main() {
+    int password;
+    do {
+        cout << "please enter password...";
+        cin >> password;
+    }
+    while(password != 1234);
+    cout<<"phone unlocked... ";
+    return 0;
+}
