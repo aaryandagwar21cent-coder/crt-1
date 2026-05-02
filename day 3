@@ -161,3 +161,24 @@ int main() {
     cout<<"phone unlocked... ";
     return 0;
 }
+
+// 💎 PROBLEM 11: WATER JAR FILLER 🫙
+// 📝 Task: Keep adding water until 500ml is reached
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int currentWater = 0;
+    int add;
+    while(currentWater < 500){
+        cout << "Glass has " << currentWater << "ml. How much to add? ";
+        cin >> add;
+        currentWater = currentWater + add;
+    }
+    cout << "Glass is full with water: " << currentWater << "ml" << endl;
+    
+    return 0;
+}
+
