@@ -36,3 +36,22 @@ int main()
 
     return 0;
 }
+
+//problem 3 
+// print a right angled triangle
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n; 
+    cin >> n;
+    //defines no of times pattern is printed
+    for(int i = 1; i <= n; i++) {
+        //definnes no of times * is printed in a line
+        for(int j = 1; j <= i; j++) {
+            cout << "* ";
+        }
+        cout << "\n";
+    }
+}
