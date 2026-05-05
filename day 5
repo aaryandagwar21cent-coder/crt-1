@@ -39,3 +39,115 @@ int main() {
     printMessage();
     return 0;
 }
+
+// Problem 3
+// Making a function with argument and return type
+
+// #include <iostream>
+// using namespace std;
+
+// int area(int a, int b){
+//     return a * b;
+// }
+
+// int main() {
+//     int length = 10;
+//     int width = 5;
+//     int areaOfRectangle = area(length, width);
+    
+//     cout << areaOfRectangle;
+// }
+
+
+// Problem 4
+// Types of Functions 
+// 4.1 -- No argument and no return Type
+
+// #include <iostream>
+// using namespace std;
+
+// void DoorBell(){
+//     cout << "Ting Tong...";
+// }
+
+// int main() {
+//     DoorBell();
+//     return 0;
+// }
+
+// 4.2 Argument, No return Type
+
+// #include <iostream>
+// using namespace std;
+
+// void sendText(string message){
+//     cout << message;
+// }
+
+// int main() {
+//     sendText("BJP wons...");
+//     return 0;
+// }
+
+// 4.3 No Argument, return type
+
+// #include <iostream>
+// using namespace std;
+
+// int ticketNumber(){
+//     return 101;
+// }
+
+// int main() {
+//     cout << ticketNumber();
+//     return 0;
+// }
+
+// 4.4 Argument, return type
+
+// #include <iostream>
+// using namespace std;
+
+// int currencyConversion(int amountInUSD){
+//     return amountInUSD / 100;
+// }
+
+// int main() {
+//     cout << currencyConversion(1000);
+//     return 0;
+// }
+
+// problem 6
+// pointers
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 23;
+    int *ptr = &age;
+    
+    cout << age << "\n";
+    cout << ptr << "\n";
+    cout << *ptr << "\n";
+    
+    *ptr  = 28;
+    cout << *ptr;
+}
+
+// Problem 7
+// addition of 2 numbers using Pointers
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a;
+    cin >> b;
+    
+    int *ptr1 = &a;
+    int *ptr2 = &b;
+    
+    int sum =  *ptr1 + *ptr2;
+    cout << sum;
+}
