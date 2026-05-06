@@ -61,3 +61,50 @@ int main() {
 //     updatebyRefrence(original);
 //     cout << original;
 // }
+
+// discount system through functions argumment and return type 
+
+//
+
+// problem 6 
+// class and object 
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+string name;
+int age;
+
+    void introduce(){
+        cout << "hi there, this person name is " << name << " and his age is " << age << "\n";
+        
+    }
+};
+
+int main () {
+    Student s1;
+    s1.name = "Abhishek";
+    s1.age = 24;
+    s1.introduce();
+}
+
+// Problem 7 
+// access modifiers
+// 7.1 -- public
+
+#include <iostream>
+using namespace std;
+
+class PublicPark{
+public:
+void enter() {
+    cout << "anyone can enter in the park...";
+}
+};
+
+int main() {
+    PublicPark p;
+    p.enter();
+    
+}
